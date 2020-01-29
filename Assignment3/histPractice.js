@@ -25,10 +25,10 @@ d3.csv("Admission_Predict.csv", function(data) {
 
     // X axis: scale and draw:
     var x = d3.scaleLinear()
-        .domain([90, 122])     // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })
+        .domain([92, 122])     // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })
         .range([50, width-50]);
     svg.append("g")
-        .attr("transform", "translate(0," + (height -50) + ")")
+        .attr("transform", "translate(0," + (height - 50) + ")")
         .call(d3.axisBottom(x));
 
     // set the parameters for the histogram
@@ -65,8 +65,8 @@ d3.csv("Admission_Predict.csv", function(data) {
             .style("fill", "black")
     
     svg.append('text') 
-        .attr('x', 175)
-        .attr('y', 350)
+        .attr('x', 170)
+        .attr('y', 345)
         .attr('fill', 'black')
         .text('TOEFL Score (bin)')
         
