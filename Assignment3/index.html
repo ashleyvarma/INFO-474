@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 3</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- <script src="//d3js.org/d3.v4.0.0-alpha.45.min.js"></script> -->
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+
+  </head>
+  <body>
+    <style>
+      body{
+        background-color: rgb(207, 132, 132);
+        font: 10px sans-serif;
+        
+      }
+      
+      div.tooltip {	
+        position: absolute;			
+        text-align: center;			
+        width: 60px;					
+        height: 28px;					
+        padding: 2px;				
+        font: 12px sans-serif;		
+        background: lightsteelblue;	
+        border: 0px;		
+        border-radius: 8px;			
+        pointer-events: none;			
+    }
+    </style>
+
+    <h1>Distribution of TOEFL Scores</h1>
+
+    <!-- <button id="Red">Red</button>
+    <button id="Blue">Blue</button>
+    <div class="container">
+      <h1>Basic functionality</h1>
+      <h2>Simple</h2>
+      <div class="row align-items-center">
+        <div class="col-sm-2"><p id="value-simple"></p></div>
+        <div class="col-sm"><div id="slider-simple"></div></div>
+      </div>
+    </div> -->
+
+    <!-- Create a div where the graph will take place -->
+    <div id="my_dataviz"></div>
+    <script src="histogram.js"></script>
+
+  </body>
+</html>
